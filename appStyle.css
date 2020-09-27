@@ -1,0 +1,298 @@
+/* Navbar section */
+#nav-bar li{
+    float: left;
+}
+
+.nav-link{
+    padding: 14px 16px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    display: block;
+    transition: transform 0.2s;
+    font-size: 1.1rem;
+}
+
+.nav-link:hover{
+    background: lightgray;
+    color:rgb(0, 89, 255);
+    transform: scale(1.1);
+
+}
+
+#nav-bar li:nth-child(1){
+    padding-left:9%;
+}
+
+
+#header{
+    z-index: 1;
+    position: fixed;
+    top:0px;
+    width: 100%;
+    background: rgba(243, 243, 243,0.9);
+    margin:0;
+    padding:0;
+}
+
+#nav-bar ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+body,html{
+    width:100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+    background: url('./back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#header-img{
+    display: none;
+}
+/* ------------------------------------------------------------ */
+/* Get Started section */
+#started{
+    margin-top:100px;
+    text-align: center;
+    line-height: 35px;
+}
+
+#started h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    
+}
+
+#started #email{
+    width: 400px;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 3px;
+}
+
+#started #submit{
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.2s;
+}
+
+#started #submit:hover{
+    background:rgb(0, 153, 255);
+    color: white;
+    
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Features--------------------------------------------------------- */
+#features{
+    padding-top:30px;
+    width: 700px;
+    margin: auto;
+}
+#features #first-row{
+    font-size: 4rem;
+    padding-right: 30px;
+    color: rgb(2, 192, 2);
+}
+
+#features #second-row{
+    font-size: 4rem;
+    padding-right: 30px;
+    color: gray;
+}
+
+#features #third-row{
+    font-size: 4rem;
+    padding-right: 30px;
+    color: rgb(0, 162, 255);
+}
+
+.row-icon{
+    transition: transform 0.2s;
+}
+
+.row-icon:hover{
+    transform: scale(1.03);
+}
+
+/* ----------------------------------------------------------------- */
+
+/* video-------------------------------------------------------------- */
+#how-it-works{
+    padding-top:40px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+
+#how-it-works #video
+{
+    border: none;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Buy---------------------------------------------------------------- */
+
+#buy{
+    display: flex;
+    width: 1000px;
+    text-align: center;
+    margin:auto;
+    justify-content: center;
+    padding: 10px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+#buy .block{
+    max-width: 300px;
+    width: 30%;
+    /* height: 100px; */
+    background: rgba(243, 243, 243,0.8);
+    margin: 14px 1%;
+    padding-top:0;
+    /* border: 2px solid white; */
+    transition: transform 0.2s;
+}
+
+#buy .block:hover{
+    transform: scale(1.03);
+}
+
+#buy .block .top{
+    padding: 8px 3px;
+    font-size: 1.3rem;
+    background: rgb(53, 148, 238);
+    color: white;
+    font-weight: 500;
+}
+
+#buy .block .mid{
+    padding-top: 50px;
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+#buy .block .mid span{
+    font-size: 1.2rem;
+}
+
+#buy .block button{
+    border: 1.1px solid rgb(53, 148, 238);
+    color: rgb(53, 148, 238);
+    background: rgba(243, 243, 243,0.8);
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: background 0.2s;
+    padding: 5px;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+#buy .block button:hover{
+    background: rgb(53, 148, 238);
+    color: white;
+    font-weight: 500;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+/* Footer------------------------------------------------------------------------ */
+footer{
+    margin: auto;
+    width:820px;
+    background: lightgray;
+    padding: 20px 0;
+    text-align: right;
+}
+
+footer #content a{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    font-weight: 300;
+}
+
+footer #content a:hover{
+    font-weight: 500;
+}
+footer #content span{
+    padding-top:5px;
+    font-size: 0.9rem
+}
+
+footer #content{
+    padding-right: 30px;
+}
+/* ------------------------------------------------------------------------------- */
+
+
+/* media queries------------------------------------------------------------------ */
+@media(max-width:1010px){
+    #buy{
+        width:90%;
+    }
+}
+
+@media(max-width:820px){
+    #buy .block{
+        width:100%;
+    }
+
+    #features{
+        width: 100%;
+    }
+
+    footer{
+        width: 100%;
+    }
+
+    #nav-bar li:nth-child(1){
+        padding-left:0;
+    }
+}
+
+
+@media(max-width: 650px){
+    #nav-bar li{
+        float: none;
+        width: 100%;
+    }
+    
+    .nav-link{
+        font-size: 0.9rem;
+    }
+    #header{
+        position: static;
+    }
+
+    #how-it-works #video{
+        width: 90%;
+    }
+}
+
+@media(min-width: 650px){
+    #nav-bar li:nth-child(1){
+        padding-left:9%;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+
